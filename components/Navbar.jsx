@@ -1,10 +1,11 @@
 import Link from 'next/link';
-import { Menu, MenuButton, MenuList, MenuItem, IconButton, Flex, Box, Spacer } from '@chakra-ui/react';
+import { Menu, MenuButton, MenuList, MenuItem, IconButton, Flex, Box, Spacer, Text } from '@chakra-ui/react';
 import { FcMenu, FcHome, FcAbout } from 'react-icons/fc';
 import { BsSearch } from 'react-icons/bs';
 import { FiKey } from 'react-icons/fi';
 
 import logo from '../assets/images/Transparent icon.png'
+import Image from 'next/image';
 
 const Navbar = () => (
     <Flex p="2" borderBottom="1px" borderColor="gray.100">
