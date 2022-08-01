@@ -4,11 +4,19 @@ import { FcMenu, FcHome, FcAbout } from 'react-icons/fc';
 import { BsSearch } from 'react-icons/bs';
 import { FiKey } from 'react-icons/fi';
 
+import logo from '../assets/images/Transparent icon.png'
+
 const Navbar = () => (
     <Flex p="2" borderBottom="1px" borderColor="gray.100">
         <Box fontSize="3xl" color="blue.400" frontWeight="bold">
-            <Link href="/" paddingLeft="2">Realtor</Link>
+            <Link href="/" paddingLeft="2">
+                 <Image src={logo} alt="Logo" width={70} height={70} />
+            </Link>
         </Box>
+        <Link href="/" paddingLeft="2">
+            <Text fontSize="3xl" paddingTop="3.5">Real Estate</Text>
+        </Link>
+
         <Spacer />
         <Box>
             <Menu>
